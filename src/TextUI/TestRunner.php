@@ -205,7 +205,7 @@ final class TestRunner
 
         if ($this->configuration->hasLogfileText()) {
             $result->addListener(
-                new DefaultResultPrinter(
+                new OldResultPrinter(
                     $this->configuration->logfileText(),
                     true
                 )
@@ -634,7 +634,7 @@ final class TestRunner
         $className = VoidPrinter::class;
 
         if ($this->configuration->outputIsDefault()) {
-            $className = DefaultResultPrinter::class;
+            $className = OldResultPrinter::class;
         } elseif ($this->configuration->outputIsTestDox()) {
             $className = CliTestDoxPrinter::class;
         }
