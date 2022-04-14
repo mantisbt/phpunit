@@ -411,6 +411,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count($preferCache = false)
     {
         if ($preferCache && $this->cachedNumTests !== null) {
@@ -981,6 +982,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
      *
      * @return TestSuiteIterator
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         $iterator = new TestSuiteIterator($this);

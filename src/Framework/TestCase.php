@@ -371,6 +371,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return 1;
