@@ -32,7 +32,7 @@
         "phar-io/version": "^1.0",
         "phpspec/prophecy": "^1.7",
         "phpunit/php-code-coverage": "^5.3",
-        "phpunit/php-file-iterator": "^1.4.3",
+        "phpunit/php-file-iterator": "dev-mantis-1.4",
         "phpunit/php-text-template": "^1.2.1",
         "phpunit/php-timer": "^1.0.9",
         "phpunit/phpunit-mock-objects": "^5.0.9",
@@ -84,5 +84,12 @@
         "branch-alias": {
             "dev-master": "6.5.x-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mantisbt/php-file-iterator",
+            "no-api": true
+        }
+    ]
 }
